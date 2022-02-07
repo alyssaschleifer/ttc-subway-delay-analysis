@@ -11,7 +11,6 @@ output:
   extra_dependencies: ["float"]
 urlcolor: blue
 bibliography: references.bib
-nocite: '@*'
 ---
 
 ```{r Intro, include=FALSE}
