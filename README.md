@@ -6,6 +6,6 @@ The data for this paper can be found from the [OpenDataToronto](https://open.tor
 
 The repo is organized as follows:
 
-- `outputs/paper/Paper1.rmd`: The RMarkdown file
-- `outputs/paper/Paper1.pdf`: The PDF file generated using the RMarkdown file
+- `outputs/paper/Paper.rmd`: The RMarkdown file
+- `outputs/paper/Paper.pdf`: The PDF file generated using the RMarkdown file
 - `scripts/01-clean_data.R`: Script used in the RMarkdown file to download & clean the data
