@@ -1,5 +1,5 @@
 ---
-title: "Toronto Subway Delays Vary Based on Specific Ridership Patterns^[Code and data supporting this analysis is available at: https://github.com/alyssaschleifer/paper1]"
+title: "Toronto Subway Delays Vary Based on Specific Ridership Patterns^[Code and data supporting this analysis is available at: https://github.com/alyssaschleifer/ttc-subway-delay-analysis]"
 author: "Alyssa Schleifer"
 date: "6 February 2022"
 abstract: While the Toronto subway system might be one of the most widely-used and convenient modes of transportation in the city, it is no secret to commuters that subway service has been steadily declining in recent years. As the number of subway delays continues to rise, the overall reliability of the subway is called into question. Data is a critical tool for evaluating and understanding common delay causes and patterns among delay occurrences. In our analysis, we noted a strong correlation between delay frequency and peak ridership hours, and established how some of the most common causes of delays such as passenger-related illness and operator error vary among stations. Finally, we found some inconsistencies in the data in terms of differences in reporting standards between stations. These inconsistencies could hinder the efforts of policymakers who require a clear picture of the problem to address these issues.

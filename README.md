@@ -1,4 +1,4 @@
-# paper1
+# ttc-subway-delay-analysis
 
 This repo contains the code and data for Toronto Subway Delays Vary Based on Specific Ridership Patterns, an analysis of TTC Subway Delay Data.
 
