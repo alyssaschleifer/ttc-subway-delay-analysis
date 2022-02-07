@@ -1,5 +1,5 @@
 ---
-title: "Toronto Subway Delays Vary Based on Specific Ridership Patterns^[Code and data supporting this analysis is available at: https://github.com/alyssaschleifer/ttc-subway-delay-analysis]"
+title: "Toronto Subway Delays Vary Based on Specific Ridership Patterns^[Code and data is available at: github.com/alyssaschleifer/ttc-subway-delay-analysis]"
 author: "Alyssa Schleifer"
 date: "6 February 2022"
 abstract: While the Toronto subway system might be one of the most widely-used and convenient modes of transportation in the city, it is no secret to commuters that subway service has been steadily declining in recent years. As the number of subway delays continues to rise, the overall reliability of the subway is called into question. Data is a critical tool for evaluating and understanding common delay causes and patterns among delay occurrences. In our analysis, we noted a strong correlation between delay frequency and peak ridership hours, and established how some of the most common causes of delays such as passenger-related illness and operator error vary among stations. Finally, we found some inconsistencies in the data in terms of differences in reporting standards between stations. These inconsistencies could hinder the efforts of policymakers who require a clear picture of the problem to address these issues.
@@ -21,7 +21,7 @@ library(openintro)
 
 ## 1 Introduction
 
-The Toronto subway system serves over 1.5 million people daily, providing a level of efficiency and convenience that other modes of transportation lack (TTC 2019)^[Daily ridership numbers are based on pre-COVID data]. It continues to grow and expand to meet the evolving needs of the city it supports. Since its opening in 1954, the subway has grown from only twelve stations to 75 stations spread over four lines spanning two cities (City of Toronto Archives 1954). With ongoing efforts in place to continue to expand the subway system, it is important to consider aspects of the subway that could benefit from improvement and try to better understand any major downfalls. Potentially one of the biggest complaints regarding the Toronto subway is the number of delays the subway experiences on a daily basis. For many individuals, these frequent and unpredictable delays compromise the reliability of the subway, especially for those commuting to work and school. In fact, estimates of subway use show evidence of a gradual decline in subway popularity over the past few decades (Nowlan and Stewart 2007). However, much of the previous research fails to offer an in depth examination regarding the reasons for the subway's decline in popularity, or how the ongoing delays might affect the perceived reliability of the subway, and consequently lead to a decrease in subway ridership.
+The Toronto subway system serves over 1.5 million people daily, providing a level of efficiency and convenience that other modes of transportation lack (TTC 2019). It continues to grow and expand to meet the evolving needs of the city it supports. Since its opening in 1954, the subway has grown from only twelve stations to 75 stations spread over four lines spanning two cities (City of Toronto Archives 1954). With ongoing efforts in place to continue to expand the subway system, it is important to consider aspects of the subway that could benefit from improvement and try to better understand any major downfalls. Potentially one of the biggest complaints regarding the Toronto subway is the number of delays the subway experiences on a daily basis. For many individuals, these frequent and unpredictable delays compromise the reliability of the subway, especially for those commuting to work and school. In fact, estimates of subway use show evidence of a gradual decline in subway popularity over the past few decades (Nowlan and Stewart 2007). However, much of the previous research fails to offer an in depth examination regarding the reasons for the subway's decline in popularity, or how the ongoing delays might affect the perceived reliability of the subway, and consequently lead to a decrease in subway ridership.
 
 
 Data regarding subway operations is an extremely important tool in understanding possible flaws or areas of improvement. With delays being one of the most prevalent issues, data focused on recording delays as well as different variables pertaining to these delays could provide extremely valuable insight into some of their leading causes as well as potential patterns in delay prevalence. Since so many trains are operating at any given time, even a brief delay at one station will inevitably have a ripple effect on the rest of the line. This is a trade-off for the convenience the subway offers, as running individual trains so close together is the only way to provide ongoing access to the trains. Thus, being able to minimize the frequency of delays would have a huge impact on the overall service and reliability of the trains. 
@@ -33,7 +33,7 @@ In the following paper, I will analyze TTC subway delay data in an attempt to sh
 
 ## 2 Data
 
-```{r}
+```{r Sec-1, include = FALSE, fig.dim=c(7,6), fig.pos="!H"}
 library(opendatatoronto)
 library(tidyverse)
 library(dplyr)
@@ -41,7 +41,7 @@ library(knitr)
 library(kableExtra)
 library(patchwork)
 library(scales)
-# Run script to download and clean delay data
+
 source("./scripts/01-clean_data.R", local = knitr::knit_global())
 ```
 
@@ -189,7 +189,6 @@ The reasoning for reported subway delays appears to vary greatly based on the ty
 
 
 In order to improve upon the current subway delay crisis, having access to complete and reliable data is crucial in order to better understand the root of the problem and implement effective solutions. While this data does offer a number of valuable insights, inconsistencies in reporting standards and biases do hinder the reliability of the data. Regardless, the available information still offers numerous key insights into the prevalence of subway delays throughout Toronto and can be used as an effective starting point in identifying ways to address these issues.
-
 
 
 \newpage
